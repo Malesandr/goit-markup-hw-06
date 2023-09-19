@@ -31,6 +31,12 @@
                 </li>
             </ul>
         </nav>
+
+        <button class="mobile-btn" type="button">
+          <svg class="icon-mobile" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         
         <address class="address">
             <ul class="address-list address-list-item">
@@ -39,16 +45,103 @@
         </ul>
         </address>
     </div>
+
+
+
+
+
+
+    <div class="mobile-menu is-open">
+      <div class="container thumb-mobile">
+        <button class="mobile-close" type="button">
+          <svg class="icon-mobile" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-list">
+          <li>
+            <a class="nav-mobile nav-list-active" href="./index.html">Studio</a>
+          </li>
+          <li>
+            <a class="nav-mobile" href="">Portfolio</a>
+          </li>
+          <li>
+            <a class="nav-mobile" href="">Contacts</a>
+          </li>
+        </ul>
+        <address>
+          <ul class="mobile-address">
+            <li>
+              <a
+                class="mobile-link-address nav-list-active"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="mobile-link-address" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="social-list-icon">
+          <li class="social-item-icon">
+            <a class="social-link-icon" href="https://www.instagram.com/">
+              <svg class="icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item-icon">
+            <a class="social-link-icon" href="https://twitter.com/">
+              <svg class="icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item-icon">
+            <a class="social-link-icon" href="https://www.facebook.com/">
+              <svg class="icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item-icon">
+            <a class="social-link-icon" href="https://www.linkedin.com/">
+              <svg class="icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
     </header>
+
+
     <main class="main-content">
+
+      <!------------ Hero --------------->
         <section  class="hero">
             <div class="container">
-            <h1 class="hero-text">Effective Solutions for Your Business</h1>
+            <h1 class="hero-text">Effective Solutions <br/> for Your Business</h1>
             <button class="button" type="button">Order Service</button>
         </div>
         </section>
+
+      <!------------END Hero ---------->
+
+      <!----------- About-------------->
+
         <section class="section">
-            <div class="container">
+            <div class="container about-thumb">
             <h2 class="visually-hidden">about</h2>
             <ul class="about-list">
                 <li class="about-item">
@@ -98,6 +191,9 @@
             </ul>
             </div>
         </section>
+<!-----------END About-------------->
+
+<!-----------Teame-------------->
         <section class="team-section section">
         <div class="container">
             <h2 class="team-title">Our Team</h2>
@@ -269,6 +365,11 @@
             </ul>
         </div>
         </section>
+
+        <!-----------END Teame-------------->
+
+        <!-----------Portfolio-------------->
+
         <section class="section">
         <div class="container">
             <h2 class="portfolio-title">Our Portfolio</h2>
@@ -283,7 +384,7 @@
                     ./images/banking-app-tablet@2x.jpg 712w, 
                     ./images/banking-app-mobile.jpg 288w, 
                     ./images/banking-app-mobile@2x.jpg 576w"
-                    sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                    sizes="(min-width: 1158px) 320px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                     alt="Banking App" width="360">
                     
                     <p class="overlay-text overlay">
@@ -420,6 +521,10 @@
             </ul>
         </div>
         </section>
+
+
+        <!-----------END Portfolio-------------->
+
     </main>
     <footer class="page-footer">
         <div class="container footer-block">
