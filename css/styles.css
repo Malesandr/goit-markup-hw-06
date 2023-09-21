@@ -59,13 +59,6 @@ img {
 }
 
 
-/* .container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-} */
-
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -121,7 +114,7 @@ img {
 
 @media screen and (max-width: 767px) {
 
-/* ============= Logo ============= */
+/* ============= Mobile Logo ============= */
     
 .logo-type {
   display: block;
@@ -138,7 +131,7 @@ img {
   color: var(--navyblue);
    }
 
-   /* ============= Nav List  ============= */
+   /* ============= Mobile Nav List  ============= */
    
    .page-header {
     padding-top: 17.5px;
@@ -160,7 +153,7 @@ img {
     display: none;
 }
 
-/* ============= Mobile Menu ============= */
+/* ============= Mobile Mobile Menu ============= */
 
 .mobile-btn {
   border: none;
@@ -184,9 +177,11 @@ img {
   left: 0;
   background-color: #FCFCFC;
 
+  /* opacity: 1; */
   opacity: 0;
-  visibility: hidden;
   /* visibility: visible; */
+  visibility: hidden;
+  /* pointer-events: auto; */
   pointer-events: none;
   
 
@@ -194,17 +189,16 @@ img {
 }
 
 .mobile-menu.is-open {
-  opacity: 1;
+  opacity: 0;
+  visibility: hidden;
   /* visibility: visible; */
-   visibility: hidden;
-  pointer-events: auto;
+  pointer-events: none;
+  /* pointer-events: auto; */
+ 
 }
 
-.backdrop.is-open {
-  /* opacity: 0; */
-  visibility: hidden;
-  /* pointer-events: none; */
-}
+
+
 
 .thumb-mobile {
   position: relative;
@@ -282,7 +276,7 @@ img {
   color: var(--ocean);
 }
 
-/*===================== About ================ */
+/*===================== Mobile About ================ */
 
 .about-icon {
   display: none;
@@ -317,14 +311,10 @@ img {
   margin-bottom: 72px;
 }
 
-/* .about-list:not(:last-child) {
-  margin-bottom: 72px;
-} */
-
 
 }
 
-/* ============= Hero, Team, Portfolio, Footer part ============= */
+/* ============= Mobile  Hero, Team, Portfolio, Footer part ============= */
 
 @media screen and (min-width: 320px) {
   .container {
@@ -336,7 +326,7 @@ img {
     padding-bottom: 96px;
   }
 
-    /* ============= Hero part ============= */
+    /* ============= Mobile Hero  ============= */
 
     .hero {
       max-width: 320px;
@@ -356,7 +346,7 @@ img {
       margin-right: auto;
   }
 
-  /* =============Add background-image 2x ============= */
+  /* ============= Mobile Add background-image 2x ============= */
 
   @media screen and (min-width: 320px) and (min-resolution: 192dpi) {
       .hero {
@@ -406,7 +396,7 @@ img {
     background-color: var(--ocean);
 }
 
-/*===================== Team ================ */
+/*===================== Mobile Team ================ */
 
 .our-team-list {
   display: flex;
@@ -453,9 +443,6 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-/* .team-list-item:not(:last-child) {
-  margin-bottom: 72px;
-} */
 
 .team-list-item {
   margin-bottom: 72px;
@@ -501,7 +488,7 @@ img {
   fill: var(--cloud);
 }
 
-/* =============== Portfolio ================ */
+/* =============== Mobile Portfolio ================ */
 
 .overlay {
   display: none;
@@ -546,7 +533,7 @@ img {
   font-weight: 400;
 }
 
-/* ================ Footer ================= */
+/* ================ Mobile Footer ================= */
 
 .page-footer {
   background-color: var(--navyblue); 
@@ -575,11 +562,6 @@ img {
 
   margin-bottom: 16px;
 }
-
-/* .footer-block {
-  display: flex;
-  align-items: baseline;
-} */
 
 
 .page-footer .footer-text-social-media {
@@ -704,28 +686,6 @@ img {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ============= Tablet ============= */
 
 @media screen and (min-width: 768px) {
@@ -733,7 +693,7 @@ img {
       width: 768px;
   }
 
-  /* --------- Header part --------- */
+  /* ============= Tablet Header ============= */
 
   .logo-type {
       display: block;
@@ -841,7 +801,7 @@ img {
     color: var(--ocean);
   }
 
-  /* ============= Hero part ============= */
+  /* ============= Tablet Hero  ============= */
 
   .hero {
       max-width: 768px;
@@ -861,7 +821,7 @@ img {
       margin-left: auto;
   }
 
-  /* ============= Background-image 2x ============= */
+  /* ============= Tablet Background-image 2x ============= */
 
   @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
       .hero {
@@ -913,7 +873,7 @@ img {
       background-color: var(--ocean);
   }
 
-  /* ============= Features part =============*/
+  /* ============= Tablet About =============*/
 
   .about-icon {
       display: none;
@@ -949,15 +909,54 @@ img {
       letter-spacing: 0.02em;
   }
 
-  /* ============= Our Team part ============= */
+  /* ============= Tablet Team ============= */
+  .our-team-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-team-list {
+  
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 72px;
+}
 
 
+  .our-team-list {
+    flex-direction: row;
+    justify-content: center;
+   
+}
 
-
+.team-list-item {
+    margin-bottom: 0;
+}
 
 
   
-  /* ============= Portfolio part ============= */
+  /* ============= Tablet Portfolio ============= */
+
+  .our-portfolio-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  .our-portfolio-list {
+ 
+    gap: 24px;
+    row-gap: 72px;
+  }
+
+  .our-portfolio-list {
+    flex-direction: row;
+    justify-content: center;
+   
+}
 
   .our-portfolio-list-wrap {
       flex-wrap: wrap;
@@ -972,7 +971,7 @@ img {
       width: calc((100% - 24px) / 2);
   }
 
-  /* ============= Footer part ============= */
+  /* ============= Tablet Footer ============= */
 
   .footer-block {
       display: flex;
@@ -995,7 +994,7 @@ img {
       width: 208px;
   }
 
-  .footer-text-social-media {
+  .footer-form-title, .footer-text-social-media {
       text-align: left;
   }
 
@@ -1005,4 +1004,414 @@ img {
   }
 }
 
-/* --------- End Tablet site --------- */
+/* ========== End Tablet ============= */
+
+/* ============= Desktop ============= */
+
+@media screen and (min-width: 1158px) {
+  .container {
+      width: 1158px;
+  }
+
+  .section {
+      padding-top: 120px;
+      padding-bottom: 120px;
+  }
+
+  .address-list-item {
+    display: flex;
+    gap: 40px;
+    
+  }
+
+
+  .hero {
+    max-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
+
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+              rgba(46, 47, 66, 0.70)), url(../images/people-office-desktop@2x.jpg);
+  }
+}
+
+.hero-title {
+  margin-bottom: 48px;
+}
+
+
+/* ============== Desctop About =========== */
+
+.about-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.about-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  border-radius: 4px;
+  border: 1px solid var(--light-slate);
+  background-color: var(--cloud);
+  margin-bottom: 8px;
+}
+
+.about-name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.about-descr {
+  font-weight: 400;
+  letter-spacing: 0.002em;
+}
+
+/* ============== Desctop Team =========== */
+
+.our-team-list {
+  flex-wrap: nowrap;
+}
+
+/* ============= Desctop Portfolio ============ */
+
+.our-portfolio-list {
+  display: flex;
+  gap: 24px;
+ }
+
+.portfolio-title {
+color: var(--navyblue);
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+text-align: center;
+
+margin-bottom: 72px;
+}
+
+.our-portfolio-list-wrap {
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 72px) / 3);
+  row-gap: 48px;
+}
+
+.portfolio-list-item {
+  width: calc((100% - 48px) / 3);
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+}
+
+.portfolio-name {
+color: var(--navyblue);
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2;
+letter-spacing: 0.02em; 
+margin-bottom: 8px;
+}
+
+.portfolio-about {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+
+.portfolio-list-item:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08); 
+  transform: translateY(0%);
+}
+
+.portfolio-img-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-text {
+  margin-bottom: 8px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris);
+  top: 0;
+  left: 0;
+
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+
+}
+
+.portfolio-list-item:hover .overlay {
+  transform: translateY(0);
+}
+
+
+.portfolio-img-overlay .overlay-text {
+  color: var(--cloud);
+  padding: 40px 32px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ================== Desctop Foter =========== */
+.footer-block {
+  display: flex;
+  justify-content: space-around;
+
+  padding-left: 15px;
+}
+
+.footer-logo {
+  margin: 0;
+}
+
+.footer-social .social-list-icon {
+  margin-bottom: 0;
+}
+
+
+}
+
+/* ================== END Desctop =========== */
+
+@media screen and (min-width: 320px) {
+
+/* ================ Modal ================= */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(46, 47, 66, 0.40);
+
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.backdrop.is-open {
+  opacity: 0;
+  /* visibility: visible; */
+  visibility: hidden;
+  pointer-events: none; 
+  /* auto */
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 408px;
+  min-height: 584px;
+
+  transform: translate(-50%, -50%) scale(1);
+
+  border-radius: 4px;
+  background-color: #FCFCFC;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding: 72px 24px 24px 24px;
+}
+
+.modal-x {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--cornflower);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+
+  padding: 0;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-x:hover,
+.modal-x:focus {
+  fill: var(--white);
+  background-color: var(--ocean);
+  border: none;
+}
+
+
+
+.modal-title {
+  color: var(--navyblue);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 16px;
+}
+
+.form-text {
+  margin-bottom: 8px;
+}
+
+.modal-label {
+  margin-bottom: 8px;
+
+  color: var(--light-slate);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  display: block;
+  margin-bottom: 4px;
+}
+
+.contacts {
+  position: relative;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.40);
+  background-color: transparent;
+  outline: transparent;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding-left: 38px
+}
+
+.modal-input:focus,
+.modal-input:hover {
+  border: 1px solid var(--iris);
+}
+
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  width: 18px;
+  height: 24px;
+
+  transform: translateY(-50%);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus+.modal-icon,
+.modal-input:hover+.modal-icon {
+  fill: var(--iris);
+}
+
+.comment-user {
+  margin-bottom: 16px
+}
+
+.modal-comment {
+  resize: none;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+
+  padding: 8px 16px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-comment:focus,
+.modal-comment:hover {
+  border-color: var(--iris);
+}
+
+.modal-comment.modal-input {
+  padding: 8px 16px;
+}
+
+
+/* ================ Policy ================= */
+
+.modal-policy {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+
+  margin-bottom: 24px;
+}
+
+.modal-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 16px;
+  height: 16px;
+
+  margin-right: 8px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  border: 1px solid rgba(46, 47, 66, 0.40);
+  border-radius: 2px;
+
+  fill: transparent;
+}
+
+.modal-checkbox-v:checked+.modal-policy-label .modal-checkbox {
+  background-color: var(--ocean);
+  border: none;
+  fill: var(--cloud);
+}
+
+.modal-policy-label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+
+  color: var(--light-slate);
+}
+
+.modal-link {
+  line-height: 1.33;
+  text-decoration: underline;
+  color: var(--iris);
+}
+
+}
+
+
+@media screen and (min-width: 768px) {
+  .modal {
+      width: 408px;
+  }
+}
