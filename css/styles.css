@@ -21,7 +21,7 @@
     letter-spacing: 0.02em;
     color: var(--slate);
     background-color: var(--white);
-  }
+      }
   
 
   ul {
@@ -55,8 +55,7 @@
 img {
   display: block;
    max-width: 100%;
-   /* height: auto; */
-}
+   }
 
 
 .container {
@@ -83,7 +82,7 @@ img {
 
 .social-list-icon {
   display: flex;
-  justify-content: center;
+ 
   gap: 24px;
 }
 
@@ -124,7 +123,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px; 
+  /* margin-right: 76px;  */
 }
 
 .logo-studio {
@@ -149,11 +148,15 @@ img {
     display: none;
 }
 
+
 .address {
-    display: none;
+  display: none;
 }
 
-/* ============= Mobile Mobile Menu ============= */
+
+
+
+/* ============= Mobile  Menu ============= */
 
 .mobile-btn {
   border: none;
@@ -171,41 +174,35 @@ img {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 20;
+  z-index: 45;
 
   top: 0;
   left: 0;
   background-color: #FCFCFC;
 
-  /* opacity: 1; */
-  opacity: 0;
-  /* visibility: visible; */
-  visibility: hidden;
-  /* pointer-events: auto; */
-  pointer-events: none;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
   
-
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 
 .mobile-menu.is-open {
-  opacity: 0;
-  visibility: hidden;
-  /* visibility: visible; */
-  pointer-events: none;
-  /* pointer-events: auto; */
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
  
 }
 
 
-
-
-.thumb-mobile {
-  position: relative;
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  padding-right: 111;
   padding-left: 16px;
   padding-top: 72px;
   padding-bottom: 40px;
-}
+} 
 
 .mobile-close {
   position: absolute;
@@ -234,7 +231,15 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 
+ 
+}
+
+.nav-mobile-margin {
   margin-bottom: 40px;
+}
+
+.mobile-link-address-margin {
+  margin-bottom: 24px;
 }
 
 .nav-mobile:hover,
@@ -242,12 +247,10 @@ img {
   color: var(--ocean);
 }
 
-.mobile-list {
-  margin-bottom: 168px;
-}
 
 .mobile-address {
   margin-bottom: 48px;
+  font-style: normal;
 }
 
 .mobile-link-address {
@@ -269,6 +272,10 @@ img {
 
 .mobile-menu .social-list {
   gap: 40px;
+}
+
+.adress-social-list {
+  margin-top: auto;
 }
 
 .nav-mobile.nav-list-active,
@@ -311,6 +318,9 @@ img {
   margin-bottom: 72px;
 }
 
+.about-item:last-child {
+  margin-bottom: 0px;
+}
 
 }
 
@@ -448,6 +458,10 @@ img {
   margin-bottom: 72px;
 } 
 
+.team-list-item:last-child {
+  margin-bottom: 0;
+}
+
 
 .team-about {
   display: flex;
@@ -582,11 +596,6 @@ img {
   color: var(--cloud); 
 }
 
-.footer-logo {
-  margin-right: 120px;
-  width: 264px;
-}
-
 
 .footer-text-social-media {
   color: var(--white);
@@ -597,9 +606,6 @@ img {
   margin-bottom: 16px;
 }
 
-.footer-social {
-  width: 208px;
-}
 
 .footer-social .social-link-icon:hover,
 .footer-social .social-link-icon:focus {
@@ -784,11 +790,39 @@ img {
       opacity: 1;
   }
 
+  .container {
+    width: 768px;
+}
+
+  .address-list-margin {
+    margin-bottom: 12px;
+    font-size: 12px; 
+  } 
+
+  .address-list-margin:last-child {
+    margin-bottom: 0px;
+  }
+
+
+  
+
+  .address-list-margin:last-child{
+    margin-bottom: 0px;
+  } 
+  
+ .address {
+  display: block;
+  font-style: normal;
+ margin-right: 16px;
+ }
+
+ 
+
   .address-list .address-link {
       color: #434455;
-      
-      font-style: normal; 
-  }
+        }
+
+
 
   .address-link:hover,
   .address-link:focus {
@@ -977,8 +1011,11 @@ img {
       display: flex;
       flex-wrap: wrap;
 
-      padding-left: 108px;
   }
+
+  .footer-block {
+    width: 584px;
+}
 
   .footer-logo {
       margin-left: 0;
@@ -1038,7 +1075,7 @@ img {
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
   .hero {
       background-image: linear-gradient(rgba(46, 47, 66, 0.70),
-              rgba(46, 47, 66, 0.70)), url(../images/people-office-desktop@2x.jpg);
+              rgba(46, 47, 66, 0.70)), url(../images/people-office@2x.jpg);
   }
 }
 
@@ -1169,13 +1206,17 @@ margin-bottom: 8px;
 /* ================== Desctop Foter =========== */
 .footer-block {
   display: flex;
-  justify-content: space-around;
+  
 
   padding-left: 15px;
 }
 
 .footer-logo {
-  margin: 0;
+  margin-right: 120px;
+}
+
+.footer-social {
+  margin-right: 80px;
 }
 
 .footer-social .social-list-icon {
@@ -1206,18 +1247,16 @@ margin-bottom: 8px;
 
 
 .backdrop.is-open {
-  opacity: 0;
-  /* visibility: visible; */
-  visibility: hidden;
-  pointer-events: none; 
-  /* auto */
-}
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto; 
+ }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 408px;
+  width: 288px;
   min-height: 584px;
 
   transform: translate(-50%, -50%) scale(1);
