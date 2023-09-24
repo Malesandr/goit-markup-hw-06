@@ -596,12 +596,16 @@ img {
   color: var(--cloud); 
 }
 
+.social-list-icon {
+  justify-content: center
+}
+
 
 .footer-text-social-media {
   color: var(--white);
 
   text-align: center;
-   font-weight: 500;
+  font-weight: 500;
  
   margin-bottom: 16px;
 }
@@ -1061,6 +1065,10 @@ img {
     
   }
 
+  .address-link {
+    font-size: 16px; 
+  }
+
 
   .hero {
     max-width: 1440px;
@@ -1213,6 +1221,7 @@ margin-bottom: 8px;
 
 .footer-logo {
   margin-right: 120px;
+  margin-bottom: 0px;
 }
 
 .footer-social {
